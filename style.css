@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+header {
+    background-color: #304D6D;
+}
+
+a {
+    color: white;
+}
+
+a:hover,
+a:focus {
+    color: lightgrey;
+}
+
+#headerText {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+#headerTitle {
+    margin-right: 6vw;
+}
+
+#aboutMe {
+    margin-top: 3vh;
+}
+
+#headerTitle > h1 {
+    width: 100%;
+    font-size: calc(min(15vh, 16vw));
+    margin: 0 auto;
+}
+
+#aboutMe > h3 {
+    font-size: calc(min(5vh, 6vw));
+    margin: 0 auto;
+}
+
+#aboutMe > p {
+    font-size: calc(min(3vh, 4.5vw));
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #82A0BC;
+    margin-top: auto;
+}
+
+#footerContent {
+    width: calc(min(30vh, 15vw));
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1vw;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bigImage {
+    width: calc(50% - 10px);
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.smallImage {
+    width: calc(33% - 10px);
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    width: 65%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-size: calc(min(3vh, 4.5vw));
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #545E75;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #7e8db0;
+    color: white;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: darkgrey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@media (min-aspect-ratio: 4/3) {
+    .bigImage:hover {
+        transform: scale(1.05);
+    }
+    
+    .smallImage:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .container {
+        max-width: 97vw;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        -webkit-overflow-scrolling: touch;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .bigImage,
+    .smallImage {
+        width: 75vw;
+        height: auto;
+        margin-right: 4vw;
+        margin-bottom: 0;
+        scroll-snap-align: center;
+    }
+
+    .smallImage:last-child {
+        margin-right: 0;
+    }
+
+    #headerText {
+        max-width: 97vw;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #headerTitle {
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+
+    #aboutMe {
+        margin: 0 auto;
+    }
+
+    #footerContent {
+        width: calc(min(20vh, 50vw));
+        grid-gap: 3vw;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .close {
+        font-size: 12vw;
+    }
+}

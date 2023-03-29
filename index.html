@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Douwe Raat</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="headerText">
+        <div id="headerTitle">
+          <h1>Douwe</h1>
+          <h1>Raat</h1>
+        </div>
+        <div id="aboutMe">
+          <h3>About me</h3>
+          <p>Hi, I am Douwe Raat. A seventeen year old student at Metis Montessori Lyceum in Amsterdam. I am following the Coderclass: a track that focuses on computer science and information technology. Here I have learned to use Python, Javascript, HTML/CSS, C++, C#, Unity, Blender and more. The last three years of the Coderclass I have been working on some awesome projects, which are listed below.</p>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <img src="images/LEGO1.png"     class="bigImage"    id="LEGOimage"  alt="LEGO-VR images">
+      <img src="images/HOLO1.jpg"     class="bigImage"    id="HOLOimage"  alt="Hologram images">
+      <img src="images/QUEST1.png"    class="smallImage"  id="QUESTimage" alt="Quantum Quest images">
+      <img src="images/BOB1.PNG"      class="smallImage"  id="BOBimage"   alt="Bob Rob images">
+      <img src="images/C++1.svg.png"  class="smallImage"  id="CPPimage"   alt="Cpp images">
+    </div>
+    <div id="modals">
+      <div id="legoModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>LEGO-VR</h2>
+          </div>
+          <div class="modal-body">
+            <p>In the first half of 2022 I created a LEGO-VR using Unity and the SteamVR plugin. In this VR-game the player is able to create their own world by placing giant LEGO bricks. It is also possible to change the color and shape of the bricks with the controllers. It was a challenge to find a good system for the placement, but I eventually settled on a laser pointing towards the desired spot, together with a preview of the brick.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Link</h3>
+            <p><a href="https://github.com/DouweRaat/VR-Lego" target="_blank">LEGO-VR (GitHub)</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="holoModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Hologram games</h2>
+          </div>
+          <div class="modal-body">
+            <p>I made these Hologram games in the second half of 2022 together with my classmate Lawrence Zhu for our high school thesis. We made two 3D games in order to answer the question: ‘To what extend are holograms suitable for videogames?’ The games are named Pong-3D and Tanks-3D. These are both 3D versions of previously existing games: Pong and a flash-game named Tanks. We made each game with three different display options: a regular laptop screen, projected in a plastic pyramid and projected in the HOLOFIL-cardboard.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Links</h3>
+            <p><a href="https://github.com/LawrenceZhuCoderclass/Hologram-Pong-PWS/tree/master" target="_blank">Pong-3D (GitHub)</a></p>
+            <p><a href="https://github.com/LawrenceZhuCoderclass/Tanks-in-holograms" target="_blank">Tanks-3D (GitHub)</a></p>
+            <p><a href="https://lawrencezhucoderclass.github.io/" target="_blank">Lawrence Zhu</a></p>
+            <p><a href="Profielwerkstuk Douwe Raat en Lawrence Zhu.pdf" target="_blank">High school tesis (Dutch)</a></p>
+            <p><a href="https://www.holofil.com/holofil-cardboard" target="_blank">HOLOFIL-cardboard</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="questModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Quantum Quest</h2>
+          </div>
+          <div class="modal-body">
+            <p>I took Quantum Quest - an online class for high school students - in november and december of 2020. The course is organized by the University of Amsterdam, QuSoft, Ruhr University Bochum and CASA and teaches the mathematics behind Quantum Computers. My group and I received one of the highest grades in the class, for which we each recieved two books.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Link</h3>
+            <p><a href="https://www.quantum-quest.org/" target="_blank">Quantum Quest</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="bobModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>BOB ROB</h2>
+          </div>
+          <div class="modal-body">
+            <p>BOB ROB is a game I made in the first half of 2021 using Unity. The player controls Bob Rob: a cowboy making his way through the desert. Bob Rob moves automatically, but the player decides when he jumps over obstacles or shoots enemies. The goal of the game is to get a score as high as possible while avoiding the increasingly difficult obstacles. BOB ROB is playable with the first link below.</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Links</h3>
+            <p><a href="https://douweraat.github.io/BobRob/" target="_blank">BOB ROB (WebGL)</a></p>
+            <p><a href="https://github.com/DouweRaat/Project_Unity_1" target="_blank">BOB ROB (GitHub)</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="cppModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>C++</h2>
+          </div>
+          <div class="modal-body">
+            <p>In the second half of 2021 I followed the course ‘Programming with C++’. The course was organized for Coderclass students by the Pre-University College team of VU Amsterdam. It covered the fundamental concepts of programming. The emphasis lay on how a computer executes programmes and how the concepts from C++ are translated into machine instructions. The course consisted of 14 one-hour interactive lectures and 86 hours of working on the programming assignments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footerContent">
+        <a href="https://www.linkedin.com/in/douwe-raat-1b1b9326b/" target="_blank"><img src="images/linkedin.png" class="logo" alt="linkedin"></a>
+        <a href="https://github.com/DouweRaat" target="_blank"><img src="images/github.svg.png" class="logo" alt="github"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
